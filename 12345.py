@@ -12,8 +12,8 @@
 #     else:
 #         print('Неверно введена карта')
 #         exit()
-# print(card_number('4255190104160802'))
-
+# print(card_number(4255190104160802))
+#
 
 # 2
 # def palindrom(word):
@@ -27,7 +27,7 @@
 
 # 3
 class Tomato:
-    states = {0: 'расток', 1: 'куст', 2: 'зелёные томаты', 3: 'красные томаты'}
+    states = {0: 'расток', 1: 'куст', 2: 'зелёный томаты', 3: 'красный томаты'}
 
     def __init__(self, index):
         self._index = index
@@ -36,7 +36,7 @@ class Tomato:
     def grow(self):
         if self._state < 3:
             self._state += 1
-        print(f'Tomato {self._index} is {Tomato.states[self._state]}')
+        print(f'Томат {self._index} - {Tomato.states[self._state]}')
 
     def is_ripe(self):
         if self._state == 3:
